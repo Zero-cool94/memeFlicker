@@ -1,0 +1,24 @@
+{
+  "name": "memeFlicker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sequelize": "sequelize",
+    "sequelize-cli": "sequelize-cli",
+    "start": "per-env",
+    "start:development": "nodemon -r dotenv/config ./bin/www",
+    "start:production": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zero-cool94/memeFlicker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zero-cool94/memeFlicker/issues"
+  },
+  "homepage": "https://github.com/Zero-cool94/memeFlicker#readme"
+}

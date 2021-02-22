@@ -54,7 +54,4 @@ function LoginFormPage() {
     </form>
   );
 }
-(arguments) => {
-
-}
 export default LoginFormPage;
