@@ -10,6 +10,8 @@ function SignupFormPage() {
   const sessionUser = useSelector((state) => state.session.user);
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState([]);
@@ -21,7 +23,7 @@ function SignupFormPage() {
     if (password === confirmPassword) {
       setErrors([]);
       return dispatch(
-        sessionActions.signup({ email, username, password })
+        sessionActions.signup({ email, username,firstname,lastname, password })
       ).catch(async (res) => {
         const data = await res.json();
         if (data && data.errors) setErrors(data.errors);
@@ -33,50 +35,73 @@ function SignupFormPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <>
+    <h2>Sign Up</h2>
+    <form className="registration" onSubmit={handleSubmit}>
       <ul>
         {errors.map((error, idx) => (
           <li key={idx}>{error}</li>
         ))}
       </ul>
-      <label>
-        Email
+        {/* <input
+         type='hidden'
+         name='_csrf'
+         value=csrfToken
+        /> */}
         <input
+          className="formtext"
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email Address"
           required
         />
-      </label>
-      <label>
-        Username
         <input
+          className="formtext"
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          placeholder="Username"
           required
         />
-      </label>
-      <label>
-        Password
         <input
+          className="formtext"
+          type="text"
+          value={firstname}
+          onChange={(e) => setFirstname(e.target.value)}
+          placeholder="First Name"
+          required
+        />
+        <input
+          className="formtext"
+          type="text"
+          value={lastname}
+          onChange={(e) => setLastname(e.target.value)}
+          placeholder="Last Name"
+          required
+        />
+        <input
+          className="formtext"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
           required
         />
-      </label>
-      <label>
-        Confirm Password
+
+
         <input
+          className="formtext"
           type="password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
+          placeholder="Confirm Password"
           required
         />
-      </label>
-      <button type="submit">Sign Up</button>
+      <button className="mainButton" type="submit">Sign Up</button>
     </form>
+    </>
+
   );
 }
 
