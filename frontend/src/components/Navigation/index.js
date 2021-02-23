@@ -15,13 +15,15 @@ function Navigation({ isLoaded }) {
   } else {
     sessionLinks = (
       <>
+        {/* <img src="/flick-logo.png" alt="logo-pic"></img> */}
         <NavLink to="/login">Login</NavLink>
         <NavLink to="/signup">Sign Up</NavLink>
       </>
     );
   }
   return (
-    <ul>
+
+    <ul className="nav-bar">
       <li>
         <NavLink exact to="/">
           Home
@@ -29,6 +31,7 @@ function Navigation({ isLoaded }) {
         {isLoaded && sessionLinks}
       </li>
     </ul>
+
   );
 }
 

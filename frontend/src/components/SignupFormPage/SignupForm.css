@@ -44,8 +44,10 @@ form {
 }
 
 ::placeholder {
-  color: #03045e;
+  color: #0609b1;
   font-family: "Raleway", sans-serif;
+  font-size: medium;
+  font-style: bold;
 }
 
 .formtext {
@@ -60,7 +62,7 @@ form {
 }
 
 .mainButton {
-  background: #cc4d29;
+  background: #22144b;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   border: 0;
@@ -75,8 +77,8 @@ form {
 }
 
 .mainButton:hover {
-  background: #049ff3;
-  color: #2c6696;
+  background: #0445f8;
+  color: #011b30;
 }
 
 .delete {
