@@ -37,6 +37,20 @@
   background: #00b4d8;
 }
 
+.infoButton {
+  background: #8867eb;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  color: #e7d8d8;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
 /* .logo {
   border-radius: 50%;
 } */

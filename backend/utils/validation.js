@@ -16,7 +16,7 @@ const handleValidationErrors = (req, _res, next) => {
   next();
 };
 const validateLogin = [
-  check('email')
+  check('credential')
   .exists({ checkFalsy: true})
   .withMessage('Please provide a value for Email Address.')
   .isEmail()
