@@ -61,14 +61,16 @@ const validateSignup = [
     .withMessage("Please provide a name less then 20 characters.")
     .isLength({ min: 2 })
     .withMessage("Please provide a name more then 1 characters."),
-  check("firstname").not().isEmail().withMessage("name cannot be an email."),
+  check("firstname").not().isEmail()
+    .withMessage("name cannot be an email"),
   check("lastname")
     .exists({ checkFalsy: false })
     .isLength({ max: 20 })
     .withMessage("Please provide a name less then 20 characters.")
     .isLength({ min: 2 })
     .withMessage("Please provide a name more then 1 characters."),
-  check("lastname").not().isEmail().withMessage("name cannot be an email."),
+  check("lastname").not().isEmail()
+    .withMessage("name cannot be an email."),
   check("password")
     .exists({ checkFalsy: true })
     .withMessage('Please provide a value for Password.')
