@@ -2,6 +2,7 @@
 const express = require("express");
 const router = express.Router();
 const asyncHandler = require("express-async-handler");
+const {singlePublicFileUpload,singleMulterUpload} = require("../../awsS3")
 
 const { setTokenCookie, requireAuth } = require("../../utils/auth");
 const { validateSignup } = require("../../utils/validation");
@@ -11,6 +12,7 @@ const { User } = require("../../db/models");
 // Sign up
 router.post(
   "/",
+  // singleMulterUpload("image"),
   validateSignup,
   asyncHandler(async (req, res) => {
     const { email, password, username, firstname, lastname} = req.body;
