@@ -38,49 +38,42 @@
 }
 
 .infoButton {
-  background: #8867eb;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  border: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 3px;
-  color: #e7d8d8;
-  font-size: 20px;
-  cursor: pointer;
-  margin-top: 10px;
+  position: relative;
+  display: inline-block;
 }
 
-/* .logo {
+/* .profile-dropdown {
+  display: block;
+  position: absolute;
+  background-color: #00b4d8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.profile-dropdown:hover > li {
+  display: block;
+}
+
+.logo {
   border-radius: 50%;
-} */
-/*
-#logoutButton {
-  background: #00b4d8;
+}
+
+.logoutButton {
+  background: #f50909;
   color: #faf4d3;
   border: none;
   font-size: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-} */
+}
 
-/* #logoutButton:hover {
+.logoutButton:hover {
   color: #03045e;
 }
 
-.errors > ul {
-  list-style: square;
-}
-
-.errors {
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
-} */
+ */
 
 /* #space {
   padding: 20px;

@@ -1,6 +1,14 @@
 /* TODO Add site wide styles */
-/* * {
-  background-color: rgb(180, 213, 241);
+
+.errors > ul {
+  list-style: square;
+}
+
+.errors {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
   color: red;
-  padding: 10px;
-} */
+  font-weight: bold;
+  font-size: 20px;
+}
