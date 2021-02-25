@@ -1,9 +1,10 @@
 /* TODO Add site wide styles */
 * {
-  background-color: #b9cccf;
+  background: url("../../frontend/src/components/images/memez.jpg") no-repeat
+    center fixed;
+  background-color: #000000;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  color: red;
+  font-family: "Arial", Helvetica, sans-serif;
 }
 
 .errors > ul {

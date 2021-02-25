@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import * as sessionActions from "../../store/session";
 
+
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
@@ -31,12 +32,13 @@ function ProfileButton({ user }) {
 
   return (
     <>
+     {/* <img src={require("./git_hub_logo.png")} width="40px" height="40px" alt="git-logo"></img>
+     <img src="/flick-logo" width="40px" height="40px" alt="flick-logo"></img> */}
       <button className="infoButton" onClick={openMenu}>
         <i class="fas fa-user-astronaut"></i>
-info
+Info
       </button>
-      <img src="/git_hub_logo.png" width="40px" height="40px" alt="git-logo"></img>
-      <img src="/flick-logo.png" width="40px" height="40px" alt="flick-logo"></img>
+
       {showMenu && (
         <ul className="profile-dropdown">
           <li>{user.username}</li>

@@ -24,7 +24,6 @@ function Navigation({ isLoaded }) {
   return (
 
     <ul className="nav-bar">
-    <li><img src="/git_hub_logo.png" width="40px" height="40px" alt="git-logo"></img></li>
      <li>
         <NavLink exact to="/">
           Home
