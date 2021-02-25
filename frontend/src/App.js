@@ -6,6 +6,7 @@ import LoginFormPage from "./components/LoginFormPage/index";
 import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
+import ProfileButton from "./components/Navigation/ProfileButton"
 
 function App() {
   const dispatch = useDispatch();

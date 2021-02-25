@@ -35,6 +35,8 @@ function ProfileButton({ user }) {
         <i class="fas fa-user-astronaut"></i>
 info
       </button>
+      <img src="/git_hub_logo.png" width="40px" height="40px" alt="git-logo"></img>
+      <img src="/flick-logo.png" width="40px" height="40px" alt="flick-logo"></img>
       {showMenu && (
         <ul className="profile-dropdown">
           <li>{user.username}</li>

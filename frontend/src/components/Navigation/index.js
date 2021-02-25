@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import "./Navigation.css";
 import ProfileButton from "./ProfileButton";
 import { NavLink } from "react-router-dom";
-import "./Navigation.css";
+// import "./Navigation.css";
 
 function Navigation({ isLoaded }) {
   const sessionUser = useSelector((state) => state.session.user);
@@ -15,7 +15,7 @@ function Navigation({ isLoaded }) {
   } else {
     sessionLinks = (
       <>
-        {/* <img src="/flick-logo.png" alt="logo-pic"></img> */}
+
         <NavLink to="/login">Login</NavLink>
         <NavLink to="/signup">Sign Up</NavLink>
       </>
@@ -24,12 +24,18 @@ function Navigation({ isLoaded }) {
   return (
 
     <ul className="nav-bar">
-      <li>
+    <li><img src="/git_hub_logo.png" width="40px" height="40px" alt="git-logo"></img></li>
+     <li>
         <NavLink exact to="/">
           Home
         </NavLink>
         {isLoaded && sessionLinks}
-      </li>
+     </li>
+
+     {/* <li> <button class="uploadbtn">Upload your meme</button></li>
+     <li> <input type="file" name="myfile" /> </li> */}
+
+
     </ul>
 
   );
