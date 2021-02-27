@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import "./Navigation.css";
 import ProfileButton from "./ProfileButton";
 import { NavLink } from "react-router-dom";
-// import "./Navigation.css";
+import UpLoadModal from "../model/UpLoadModal"
 
 function Navigation({ isLoaded }) {
   const sessionUser = useSelector((state) => state.session.user);
@@ -23,19 +23,21 @@ function Navigation({ isLoaded }) {
   }
   return (
 
+
     <ul className="nav-bar">
      <li>
         <NavLink exact to="/">
           Home
         </NavLink>
+        <NavLink exact to="/upload">
+          upload
+
+        </NavLink>
+
         {isLoaded && sessionLinks}
      </li>
-
-     {/* <li> <button class="uploadbtn">Upload your meme</button></li>
-     <li> <input type="file" name="myfile" /> </li> */}
-
-
     </ul>
+
 
   );
 }

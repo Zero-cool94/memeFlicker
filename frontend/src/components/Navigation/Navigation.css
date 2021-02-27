@@ -1,16 +1,12 @@
 .nav-bar {
   background: #000000;
   opacity: 0.9;
-
   border-bottom: 1px solid#faf4d3;
   display: inline-block;
   padding: 5px 5px 5px 5px;
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  position: fixed;
-  z-index: 10;
-  top: 0;
   width: 100%;
 }
 
@@ -29,12 +25,12 @@
   border: 1px;
 }
 ul > li {
-  display: inline-block;
+  display: space-between;
   padding: 3px 15px 3px 15px;
   background: black;
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .nav-bar > li {
@@ -78,6 +74,18 @@ ul > li {
   color: #000000;
   position: sticky;
   background: #ffffff;
+}
+
+span {
+  background: black;
+}
+h3 {
+  display: inline-block;
+  /* padding: 3px 15px 3px 15px; */
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /* .profile-dropdown {

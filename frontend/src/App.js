@@ -7,6 +7,9 @@ import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import ProfileButton from "./components/Navigation/ProfileButton"
+import Home from "./components/Home"
+import UpLoadButton from "./components/Navigation/UploadButton"
+
 
 function App() {
   const dispatch = useDispatch();
@@ -20,12 +23,19 @@ function App() {
       <Navigation isLoaded={isLoaded} />
       {isLoaded && (
         <Switch>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route  path="/upload">
+        <UpLoadButton/>
+        </Route>
           <Route path="/login">
             <LoginFormPage />
           </Route>
           <Route path="/signup">
             <SignupFormPage />
           </Route>
+
         </Switch>
       )}
     </>

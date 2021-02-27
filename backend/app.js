@@ -16,6 +16,7 @@ app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+// app.use(bodyParser({ limit:"100mb"}))
 
 // Security Middleware
 if (!isProduction) {
