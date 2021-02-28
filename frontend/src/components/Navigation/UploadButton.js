@@ -25,9 +25,9 @@ const [description , setDescription] = useState ("")
   return (
     <>
       <form  onSubmit = {handleSubmit}>
-       <input type="text" placeholder="description" value={description} onChange={updateDescription} />
-       <input type="file"  onChange={updateImage} />
-       <button type="submit"> submit </button>
+       <input className="formtext" type="text" placeholder="description" value={description} onChange={updateDescription} />
+       <input className="formtext" type="file"  onChange={updateImage} />
+       <button className="mainButton" type="submit"> add meme </button>
       </form>
 
     </>

@@ -53,7 +53,7 @@ function LoginFormPage() {
           required
         />
       <button className="mainButton" id='log-in' type="submit">Log In</button>
-      <button className="mainButton" id='demo' type="button">Log In as Demo</button>
+      <button className="mainButton"  id='demo' type="button">Log In as Demo</button>
     </form>
     </>
   );

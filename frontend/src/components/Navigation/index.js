@@ -5,6 +5,8 @@ import "./Navigation.css";
 import ProfileButton from "./ProfileButton";
 import { NavLink } from "react-router-dom";
 import UpLoadModal from "../model/UpLoadModal"
+import logo from "../images/git_hub_logo.png"
+import logo2 from "../images/flick-logo.png"
 
 function Navigation({ isLoaded }) {
   const sessionUser = useSelector((state) => state.session.user);
@@ -25,17 +27,21 @@ function Navigation({ isLoaded }) {
 
 
     <ul className="nav-bar">
+    <li> <img className="logo2" src={logo2} ></img> </li>
+
      <li>
+      <a href="https://github.com/Zero-cool94/memeFlicker">
+      <img className="logo" src={logo} alt="git-logo"></img>
+      </a>
+     </li>
         <NavLink exact to="/">
           Home
         </NavLink>
         <NavLink exact to="/upload">
           upload
-
         </NavLink>
-
         {isLoaded && sessionLinks}
-     </li>
+
     </ul>
 
 
